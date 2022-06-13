@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Roboto:wght@400;900&family=Source+Sans+Pro:ital@0;1&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>The Dogs Appp</title>
+</head>
+<body>
+
+    <div class="text-bg-secondary p-3 ">
+
+   <!----------------------------- UPLOAD DOGS  ---------------------------------->
+
+   <section id="uploadYourDog" class="text-center">
+    <h1 class="text-center mb-5 mt-5">UPLOAD YOUR DOG</h1>
+    <form id="uploadFile">
+      <input id="file" type="file" name="file">
+      <br>
+      <button id="btnUpload" onclick="uploadPhoto()"  class="btn btn-primary btn-lg fs-3 mt-3" type="button"> Upload </button>
+    </form>
+   </section>
+
+    
+ <!----------------------------- DOGS RANDOMS ---------------------------------->
+
+ <h1 class="text-center mb-5 mt-5">RANDOM DOGS</h1>
+
+ <div class="container text-center">
+
+    <div class="row">
+      <div class="col-xl-4">
+        <img src="dog-img" alt="dog-img" id="img1" class="mb-5">
+        <br>
+        <button id="btn1" onclick=" saveDogInFavorite()"  class="btn btn-primary btn-lg fs-3"> Save </button>
+      </div>
+      <div class="col-xl-4">
+        <img src="dog-img" alt="dog-img" id="img2" class="mb-5">
+        <br>
+        <button id="btn2" onclick="saveDogInFavorite()"  class="btn btn-primary btn-lg fs-3"> Save </button>
+      </div>
+      <div class="col-xl-4">
+        <img src="dog-img" alt="dog-img" id="img3" class="mb-5">
+        <br>
+        <button id="btn3" onclick="saveDogInFavorite()"  class="btn btn-primary btn-lg fs-3"> Save </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="text-center mt-5 mb-5"><button id="brnRandom" onclick="generateRandomDog()"  class="btn btn-primary btn-lg fs-3 text-center"> PRESS FOR MORE DOGS !! </button></div>
+  
+<!----------------------------- DOGS FAVORITES ---------------------------------->
+
+<div class="text-center"><h1 class="text-center mb-5">FAVORITES DOGS</h1></div>
+
+
+<section id="favoritesDogs">
+
+<!--   <div class="container text-center">
+
+    <div class="row">
+      <div class="col-xl-4">
+        <img src="dog-img" alt="dog-img" id="img1" class="mb-5">
+        <br>
+        <button id="btn1" onclick=" saveDogInFavorite(id)"  class="btn btn-primary btn-lg fs-3"> Save </button>
+      </div>
+      <div class="col-xl-4">
+        <img src="dog-img" alt="dog-img" id="img2" class="mb-5">
+        <br>
+        <button id="btn1" onclick="saveDogInFavorite(id)"  class="btn btn-primary btn-lg fs-3"> Save </button>
+      </div>
+      <div class="col-xl-4">
+        <img src="dog-img" alt="dog-img" id="img3" class="mb-5">
+        <br>
+        <button id="btn1" onclick=" saveDogInFavorite(id)"  class="btn btn-primary btn-lg fs-3"> Save </button>
+      </div>
+    </div>
+  </div> -->
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+</html>
